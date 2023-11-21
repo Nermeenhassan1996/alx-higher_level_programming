@@ -1,6 +1,6 @@
 !/usr/bin/python3
-upper = False   # chage from upper to lower
-for i in range(90, 64, -1):  # walk back word
+upper = False
+for i in range(90, 64, -1):
     if not upper:
         i += 32
         upper = True
