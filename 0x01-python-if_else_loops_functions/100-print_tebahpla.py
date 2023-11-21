@@ -1,9 +1,7 @@
 !/usr/bin/python3
-upper = False
-for i in range(90, 64, -1):
-    if not upper:
-        i += 32
+for i in range(0, 26):
+    if i % 2 = 0:
+        print("{:c}".format(122 - i), end="")
         upper = True
     else:
-        upper = False
-    print("{:c}".format(i), end="")
+        print("{:c}".format(90 - i), end="")
