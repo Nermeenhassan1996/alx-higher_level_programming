@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 for i in range(0, 26):
     if i % 2 = 0:
         print("{:c}".format(122 - i), end="")
