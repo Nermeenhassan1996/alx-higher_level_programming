@@ -1,6 +1,7 @@
--- All shows in database
---  lists all shows contained in the database hbtn_0d_tvshows. If a show doesnt have a genre, display NULL
+-- Select TV shows and their genres
+-- lists all shows contained in hbtn_0d_tvshows without a genre linked.
 SELECT tv_shows.title, tv_show_genres.genre_id
 FROM tv_shows LEFT JOIN tv_show_genres
 ON tv_shows.id = tv_show_genres.show_id
+WHERE tv_show_genres.show_id IS NULL
 ORDER BY tv_shows.title, tv_show_genres.genre_id ASC;
